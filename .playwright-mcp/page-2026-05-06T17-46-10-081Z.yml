@@ -1,0 +1,207 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e3]:
+    - link "Eletrobar - início" [ref=e4] [cursor=pointer]:
+      - /url: "#topo"
+      - img "Logo Eletrobar" [ref=e5]
+    - navigation "Navegação principal" [ref=e6]:
+      - link "Sobre" [ref=e7] [cursor=pointer]:
+        - /url: "#sobre"
+      - link "Serviços" [ref=e8] [cursor=pointer]:
+        - /url: "#servicos"
+      - link "Depoimentos" [ref=e9] [cursor=pointer]:
+        - /url: "#depoimentos"
+      - link "Contato" [ref=e10] [cursor=pointer]:
+        - /url: "#contato"
+      - link "Solicitar orçamento" [ref=e11] [cursor=pointer]:
+        - /url: "#contato"
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - region "A Revolução dos Drinks de Autoatendimento" [ref=e14]:
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - img "Logo Eletrobar com splash verde" [ref=e17]
+            - paragraph [ref=e18]: drinks • tecnologia • autoatendimento
+            - heading "A Revolução dos Drinks de Autoatendimento" [level=1] [ref=e19]
+            - paragraph [ref=e20]: Leve inovação, praticidade e diversão para o seu evento com a máquina de drinks Eletrobar.
+            - generic [ref=e21]:
+              - link "Alugue para seu evento ›" [ref=e22] [cursor=pointer]:
+                - /url: "#contato"
+                - text: Alugue para seu evento
+                - generic [ref=e23]: ›
+              - link "▶ Ver como funciona" [ref=e24] [cursor=pointer]:
+                - /url: "#sobre"
+                - generic [ref=e25]: ▶
+                - text: Ver como funciona
+          - img "Pessoa usando a máquina Eletrobar em uma festa" [ref=e28]
+      - img
+    - region "Sobre a Eletrobar" [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - paragraph [ref=e32]: Sobre
+          - heading "Sobre a Eletrobar" [level=2] [ref=e33]
+          - paragraph [ref=e34]: A Eletrobar é uma máquina de drinks de autoatendimento que transforma qualquer evento em uma experiência inesquecível. Rápida, intuitiva e moderna, ela oferece praticidade para os convidados e muito mais diversão para todos.
+          - paragraph [ref=e35]: Ideal para festas, casamentos, formaturas, bares, ativações promocionais e eventos corporativos.
+          - list [ref=e36]:
+            - listitem [ref=e37]:
+              - generic [ref=e38]: ⚡
+              - heading "Drinks em segundos" [level=3] [ref=e39]
+              - paragraph [ref=e40]: Bebidas preparadas na hora, com menos filas e mais fluidez no evento.
+            - listitem [ref=e41]:
+              - generic [ref=e42]: ☝
+              - heading "Autoatendimento intuitivo" [level=3] [ref=e43]
+              - paragraph [ref=e44]: Tela touch simples para o convidado escolher e acompanhar o preparo.
+            - listitem [ref=e45]:
+              - generic [ref=e46]: 💳
+              - heading "Pagamentos eletrônicos" [level=3] [ref=e47]
+              - paragraph [ref=e48]: Mais segurança, controle e agilidade para cobrança por drink.
+        - img "Convidado retirando drink preparado pela Eletrobar" [ref=e50]
+      - img
+    - region "Serviços e Produtos" [ref=e51]:
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - paragraph [ref=e54]: Serviços / Produtos
+          - heading "Serviços e Produtos" [level=2] [ref=e55]
+          - paragraph [ref=e56]: Escolha a Eletrobar para transformar o bar do seu evento em uma atração tecnológica, visual e altamente compartilhável.
+        - generic [ref=e57]:
+          - complementary [ref=e58]:
+            - img "Máquina Eletrobar em evento com pessoas celebrando" [ref=e59]
+            - generic [ref=e60]: O futuro dos drinks chegou
+          - generic [ref=e61]:
+            - article [ref=e62]:
+              - img "Pessoas em evento usando a máquina de drinks" [ref=e63]
+              - generic [ref=e64]:
+                - generic [ref=e65]: ▣
+                - heading "Aluguel para Eventos" [level=3] [ref=e66]
+                - paragraph [ref=e67]: Máquina de drinks completa para festas, ativações de marca e eventos com alto fluxo de convidados.
+            - article [ref=e68]:
+              - img "Convidado sorrindo ao retirar um drink" [ref=e69]
+              - generic [ref=e70]:
+                - generic [ref=e71]: 👥
+                - heading "Eventos Particulares" [level=3] [ref=e72]
+                - paragraph [ref=e73]: Praticidade e experiência diferenciada para aniversários, casamentos, formaturas e celebrações.
+            - article [ref=e74]:
+              - img "Grupo em evento com drinks e máquina Eletrobar" [ref=e75]
+              - generic [ref=e76]:
+                - generic [ref=e77]: ◼
+                - heading "Eventos Corporativos" [level=3] [ref=e78]
+                - paragraph [ref=e79]: Inovação para feiras, confraternizações, lançamentos, ações promocionais e experiências de marca.
+      - img
+    - region "Quem já viveu a experiência" [ref=e80]:
+      - generic [ref=e81]:
+        - generic [ref=e82]:
+          - paragraph [ref=e83]: Depoimentos
+          - heading "Quem já viveu a experiência" [level=2] [ref=e84]
+        - generic [ref=e85]:
+          - article [ref=e86]:
+            - generic [ref=e88]:
+              - paragraph [ref=e89]: ★★★★★
+              - blockquote [ref=e90]: “A atração da festa! Todo mundo adorou a experiência.”
+              - text: Mariana, aniversário
+          - article [ref=e91]:
+            - generic [ref=e93]:
+              - paragraph [ref=e94]: ★★★★★
+              - blockquote [ref=e95]: “Prático, bonito e muito fácil de usar.”
+              - text: Rafael, evento corporativo
+          - article [ref=e96]:
+            - generic [ref=e98]:
+              - paragraph [ref=e99]: ★★★★★
+              - blockquote [ref=e100]: “Os drinks saem rápido e a máquina chama atenção.”
+              - text: Camila, casamento
+      - img
+    - region "Fale com a Eletrobar" [ref=e101]:
+      - generic [ref=e102]:
+        - generic [ref=e103]:
+          - paragraph [ref=e104]: Contato
+          - heading "Fale com a Eletrobar" [level=2] [ref=e105]
+          - generic [ref=e106]:
+            - generic [ref=e107]:
+              - generic [ref=e108]:
+                - generic [ref=e109]: Nome
+                - textbox "Nome" [ref=e110]:
+                  - /placeholder: Seu nome
+              - generic [ref=e111]:
+                - generic [ref=e112]: E-mail
+                - textbox "E-mail" [ref=e113]:
+                  - /placeholder: seu@email.com
+            - generic [ref=e114]:
+              - generic [ref=e115]:
+                - generic [ref=e116]: Telefone
+                - textbox "Telefone" [ref=e117]:
+                  - /placeholder: (61) 99999-9999
+              - generic [ref=e118]:
+                - generic [ref=e119]: Tipo de evento
+                - combobox "Tipo de evento" [ref=e120]:
+                  - option "Selecione" [selected]
+                  - option "Festa particular"
+                  - option "Casamento"
+                  - option "Formatura"
+                  - option "Evento corporativo"
+                  - option "Ativação de marca"
+            - generic [ref=e121]:
+              - generic [ref=e122]: Mensagem
+              - textbox "Mensagem" [ref=e123]:
+                - /placeholder: Conte a data, local, público estimado e tipo de evento
+            - button "Quero um orçamento ›" [ref=e124]:
+              - text: Quero um orçamento
+              - generic [ref=e125]: ›
+            - status [ref=e126]
+        - generic [ref=e127]:
+          - generic [ref=e128]:
+            - link "◎ Instagram @eletrobar.br" [ref=e129] [cursor=pointer]:
+              - /url: https://www.instagram.com/eletrobar.br
+              - generic [ref=e130]: ◎
+              - generic [ref=e131]:
+                - generic [ref=e132]: Instagram
+                - strong [ref=e133]: "@eletrobar.br"
+            - link "☘ WhatsApp (61) 99370-3294" [ref=e134] [cursor=pointer]:
+              - /url: https://wa.me/5561993703294
+              - generic [ref=e135]: ☘
+              - generic [ref=e136]:
+                - generic [ref=e137]: WhatsApp
+                - strong [ref=e138]: (61) 99370-3294
+            - link "◎ Site eletrobar.br" [ref=e139] [cursor=pointer]:
+              - /url: https://eletrobar.br
+              - generic [ref=e140]: ◎
+              - generic [ref=e141]:
+                - generic [ref=e142]: Site
+                - strong [ref=e143]: eletrobar.br
+          - img "Grupo comemorando com drinks da Eletrobar" [ref=e145]
+  - contentinfo [ref=e146]:
+    - generic [ref=e147]:
+      - generic [ref=e148]:
+        - img "Eletrobar" [ref=e149]
+        - paragraph [ref=e150]: A revolução dos drinks de autoatendimento no seu evento.
+      - generic [ref=e151]:
+        - heading "Navegação" [level=3] [ref=e152]
+        - link "Sobre" [ref=e153] [cursor=pointer]:
+          - /url: "#sobre"
+        - link "Serviços" [ref=e154] [cursor=pointer]:
+          - /url: "#servicos"
+        - link "Depoimentos" [ref=e155] [cursor=pointer]:
+          - /url: "#depoimentos"
+        - link "Contato" [ref=e156] [cursor=pointer]:
+          - /url: "#contato"
+      - generic [ref=e157]:
+        - heading "Serviços" [level=3] [ref=e158]
+        - link "Aluguel para Eventos" [ref=e159] [cursor=pointer]:
+          - /url: "#servicos"
+        - link "Eventos Particulares" [ref=e160] [cursor=pointer]:
+          - /url: "#servicos"
+        - link "Eventos Corporativos" [ref=e161] [cursor=pointer]:
+          - /url: "#servicos"
+      - generic [ref=e162]:
+        - heading "Siga a Eletrobar" [level=3] [ref=e163]
+        - generic "Redes sociais" [ref=e164]:
+          - link "Instagram" [ref=e165] [cursor=pointer]:
+            - /url: https://www.instagram.com/eletrobar.br
+            - text: ◎
+          - link "WhatsApp" [ref=e166] [cursor=pointer]:
+            - /url: https://wa.me/5561993703294
+            - text: ☘
+          - link "Website" [ref=e167] [cursor=pointer]:
+            - /url: https://eletrobar.br
+            - text: ◉
+    - paragraph [ref=e168]: © 2026 Eletrobar. Todos os direitos reservados.
+  - link "Chamar no WhatsApp" [ref=e169] [cursor=pointer]:
+    - /url: https://wa.me/5561993703294?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20alugar%20a%20Eletrobar.
+    - text: ☘

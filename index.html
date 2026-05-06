@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,7 +16,7 @@
 
   <header class="main-header" id="topo">
     <a class="brand" href="#topo" aria-label="Eletrobar - início">
-      <img src="assets/logo-splash.png" alt="Logo Eletrobar" />
+      <span class="brand-text">Eletrobar</span>
     </a>
 
     <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
@@ -27,7 +28,7 @@
       <a href="#servicos">Serviços</a>
       <a href="#depoimentos">Depoimentos</a>
       <a href="#contato">Contato</a>
-      <a class="btn btn-small btn-outline" href="#contato">Solicitar orçamento</a>
+      <a class="btn btn-small btn-outline" href="https://wa.me/5561993703294?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20alugar%20a%20Eletrobar.">Solicitar orçamento</a>
     </nav>
   </header>
 
@@ -37,12 +38,12 @@
       <div class="container hero-grid">
         <div class="hero-copy reveal">
           <img class="hero-logo" src="assets/logo-splash.png" alt="Logo Eletrobar com splash verde" />
-          <p class="eyebrow">drinks • tecnologia • autoatendimento</p>
+          <p class="eyebrow">drinks <i class="fa-solid fa-circle eyebrow-sep" aria-hidden="true"></i> tecnologia <i class="fa-solid fa-circle eyebrow-sep" aria-hidden="true"></i> autoatendimento</p>
           <h1 id="hero-title">A Revolução dos Drinks de <span>Autoatendimento</span></h1>
           <p class="hero-lead">Leve inovação, praticidade e diversão para o seu evento com a máquina de drinks Eletrobar.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contato">Alugue para seu evento <span>›</span></a>
-            <a class="btn btn-ghost" href="#sobre"><span class="play-icon">▶</span> Ver como funciona</a>
+            <a class="btn btn-primary" href="#contato">Alugue para seu evento <i class="fa-solid fa-chevron-right btn-icon-suffix" aria-hidden="true"></i></a>
+            <a class="btn btn-ghost" href="#sobre"><i class="fa-solid fa-play play-icon" aria-hidden="true"></i> Ver como funciona</a>
           </div>
         </div>
 
@@ -65,17 +66,17 @@
 
           <div class="feature-grid" role="list">
             <article class="feature-card" role="listitem">
-              <span class="feature-icon">⚡</span>
+              <span class="feature-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></span>
               <h3>Drinks em segundos</h3>
               <p>Bebidas preparadas na hora, com menos filas e mais fluidez no evento.</p>
             </article>
             <article class="feature-card" role="listitem">
-              <span class="feature-icon">☝</span>
+              <span class="feature-icon"><i class="fa-solid fa-hand-pointer" aria-hidden="true"></i></span>
               <h3>Autoatendimento intuitivo</h3>
               <p>Tela touch simples para o convidado escolher e acompanhar o preparo.</p>
             </article>
             <article class="feature-card" role="listitem">
-              <span class="feature-icon">💳</span>
+              <span class="feature-icon"><i class="fa-solid fa-credit-card" aria-hidden="true"></i></span>
               <h3>Pagamentos eletrônicos</h3>
               <p>Mais segurança, controle e agilidade para cobrança por drink.</p>
             </article>
@@ -107,7 +108,7 @@
             <article class="service-card reveal reveal-delay-1">
               <img src="assets/party-horizontal.png" alt="Pessoas em evento usando a máquina de drinks" />
               <div class="service-content">
-                <span class="service-icon">▣</span>
+                <span class="service-icon"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></span>
                 <h3>Aluguel para Eventos</h3>
                 <p>Máquina de drinks completa para festas, ativações de marca e eventos com alto fluxo de convidados.</p>
               </div>
@@ -116,7 +117,7 @@
             <article class="service-card reveal reveal-delay-2">
               <img src="assets/hero-machine.png" alt="Convidado sorrindo ao retirar um drink" />
               <div class="service-content">
-                <span class="service-icon">👥</span>
+                <span class="service-icon"><i class="fa-solid fa-users" aria-hidden="true"></i></span>
                 <h3>Eventos Particulares</h3>
                 <p>Praticidade e experiência diferenciada para aniversários, casamentos, formaturas e celebrações.</p>
               </div>
@@ -125,7 +126,7 @@
             <article class="service-card reveal reveal-delay-3">
               <img src="assets/testimonial-night.png" alt="Grupo em evento com drinks e máquina Eletrobar" />
               <div class="service-content">
-                <span class="service-icon">◼</span>
+                <span class="service-icon"><i class="fa-solid fa-building" aria-hidden="true"></i></span>
                 <h3>Eventos Corporativos</h3>
                 <p>Inovação para feiras, confraternizações, lançamentos, ações promocionais e experiências de marca.</p>
               </div>
@@ -147,7 +148,7 @@
           <article class="testimonial-card reveal">
             <div class="avatar avatar-1"></div>
             <div>
-              <p class="stars" aria-label="5 estrelas">★★★★★</p>
+              <p class="stars" aria-label="5 estrelas"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></p>
               <blockquote>“A atração da festa! Todo mundo adorou a experiência.”</blockquote>
               <cite>Mariana, aniversário</cite>
             </div>
@@ -156,7 +157,7 @@
           <article class="testimonial-card reveal reveal-delay-1">
             <div class="avatar avatar-2"></div>
             <div>
-              <p class="stars" aria-label="5 estrelas">★★★★★</p>
+              <p class="stars" aria-label="5 estrelas"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></p>
               <blockquote>“Prático, bonito e muito fácil de usar.”</blockquote>
               <cite>Rafael, evento corporativo</cite>
             </div>
@@ -165,7 +166,7 @@
           <article class="testimonial-card reveal reveal-delay-2">
             <div class="avatar avatar-3"></div>
             <div>
-              <p class="stars" aria-label="5 estrelas">★★★★★</p>
+              <p class="stars" aria-label="5 estrelas"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></p>
               <blockquote>“Os drinks saem rápido e a máquina chama atenção.”</blockquote>
               <cite>Camila, casamento</cite>
             </div>
@@ -200,7 +201,7 @@
               </label>
             </div>
             <label><span>Mensagem</span><textarea name="mensagem" rows="4" placeholder="Conte a data, local, público estimado e tipo de evento"></textarea></label>
-            <button class="btn btn-primary form-button" type="submit">Quero um orçamento <span>›</span></button>
+            <button class="btn btn-primary form-button" type="submit">Quero um orçamento <i class="fa-solid fa-chevron-right btn-icon-suffix" aria-hidden="true"></i></button>
             <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
           </form>
         </div>
@@ -208,13 +209,13 @@
         <div class="contact-side reveal reveal-delay-1">
           <div class="contact-cards">
             <a class="contact-card" href="https://www.instagram.com/eletrobar.br" target="_blank" rel="noreferrer">
-              <span>◎</span><div><small>Instagram</small><strong>@eletrobar.br</strong></div>
+              <span><i class="fa-brands fa-instagram" aria-hidden="true"></i></span><div><small>Instagram</small><strong>@eletrobar.br</strong></div>
             </a>
             <a class="contact-card" href="https://wa.me/5561993703294" target="_blank" rel="noreferrer">
-              <span>☘</span><div><small>WhatsApp</small><strong>(61) 99370-3294</strong></div>
+              <span><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></span><div><small>WhatsApp</small><strong>(61) 99370-3294</strong></div>
             </a>
             <a class="contact-card" href="https://eletrobar.br" target="_blank" rel="noreferrer">
-              <span>◎</span><div><small>Site</small><strong>eletrobar.br</strong></div>
+              <span><i class="fa-solid fa-globe" aria-hidden="true"></i></span><div><small>Site</small><strong>eletrobar.br</strong></div>
             </a>
           </div>
           <div class="contact-photo">
@@ -247,16 +248,16 @@
       <div>
         <h3>Siga a Eletrobar</h3>
         <div class="socials" aria-label="Redes sociais">
-          <a href="https://www.instagram.com/eletrobar.br" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a>
-          <a href="https://wa.me/5561993703294" target="_blank" rel="noreferrer" aria-label="WhatsApp">☘</a>
-          <a href="https://eletrobar.br" target="_blank" rel="noreferrer" aria-label="Website">◉</a>
+          <a href="https://www.instagram.com/eletrobar.br" target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://wa.me/5561993703294" target="_blank" rel="noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+          <a href="https://eletrobar.br" target="_blank" rel="noreferrer" aria-label="Website"><i class="fa-solid fa-globe" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
-    <p class="copyright">© 2026 Eletrobar. Todos os direitos reservados.</p>
+    <p class="copyright"><i class="fa-solid fa-copyright copyright-symbol" aria-hidden="true"></i> 2026 Eletrobar. Todos os direitos reservados.</p>
   </footer>
 
-  <a class="floating-whatsapp" href="https://wa.me/5561993703294?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20alugar%20a%20Eletrobar." target="_blank" rel="noreferrer" aria-label="Chamar no WhatsApp">☘</a>
+  <a class="floating-whatsapp" href="https://wa.me/5561993703294?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20alugar%20a%20Eletrobar." target="_blank" rel="noreferrer" aria-label="Chamar no WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
 
   <script src="script.js"></script>
 </body>

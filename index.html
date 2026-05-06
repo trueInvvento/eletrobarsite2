@@ -177,50 +177,51 @@
     </section>
 
     <section class="contact section-panel" id="contato" aria-labelledby="contact-title">
-      <div class="container contact-grid">
-        <div class="contact-form-wrap reveal">
+      <div class="container contact-layout">
+        <div class="contact-intro reveal">
           <p class="section-kicker">Contato</p>
           <h2 id="contact-title">Fale com a <span>Eletrobar</span></h2>
+          <p class="contact-lead">Fale direto pelos nossos canais — resposta rápida para orçamentos e dúvidas.</p>
 
-          <form class="contact-form" id="quote-form" novalidate>
-            <div class="form-row">
-              <label><span>Nome</span><input name="nome" type="text" placeholder="Seu nome" required /></label>
-              <label><span>E-mail</span><input name="email" type="email" placeholder="seu@email.com" required /></label>
-            </div>
-            <div class="form-row">
-              <label><span>Telefone</span><input name="telefone" type="tel" placeholder="(61) 99999-9999" required /></label>
-              <label><span>Tipo de evento</span>
-                <select name="evento" required>
-                  <option value="">Selecione</option>
-                  <option>Festa particular</option>
-                  <option>Casamento</option>
-                  <option>Formatura</option>
-                  <option>Evento corporativo</option>
-                  <option>Ativação de marca</option>
-                </select>
-              </label>
-            </div>
-            <label><span>Mensagem</span><textarea name="mensagem" rows="4" placeholder="Conte a data, local, público estimado e tipo de evento"></textarea></label>
-            <button class="btn btn-primary form-button" type="submit">Quero um orçamento <i class="fa-solid fa-chevron-right btn-icon-suffix" aria-hidden="true"></i></button>
-            <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
-          </form>
+          <ul class="contact-channels">
+            <li>
+              <a class="contact-channel contact-channel--whatsapp" href="https://wa.me/5561993703294?text=Ol%C3%A1%2C%20quero%20um%20or%C3%A7amento%20para%20alugar%20a%20Eletrobar." target="_blank" rel="noreferrer">
+                <span class="contact-channel-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+                <div class="contact-channel-body">
+                  <span class="contact-channel-label">WhatsApp</span>
+                  <strong class="contact-channel-value">(61) 99370-3294</strong>
+                  <span class="contact-channel-hint">Orçamento e atendimento</span>
+                </div>
+                <span class="contact-channel-cta"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></span>
+              </a>
+            </li>
+            <li>
+              <a class="contact-channel contact-channel--instagram" href="https://www.instagram.com/eletrobar.br" target="_blank" rel="noreferrer">
+                <span class="contact-channel-icon" aria-hidden="true"><i class="fa-brands fa-instagram"></i></span>
+                <div class="contact-channel-body">
+                  <span class="contact-channel-label">Instagram</span>
+                  <strong class="contact-channel-value">@eletrobar.br</strong>
+                  <span class="contact-channel-hint">Fotos, novidades e DM</span>
+                </div>
+                <span class="contact-channel-cta"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></span>
+              </a>
+            </li>
+            <li>
+              <a class="contact-channel contact-channel--phone" href="tel:+5561993703294">
+                <span class="contact-channel-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></span>
+                <div class="contact-channel-body">
+                  <span class="contact-channel-label">Telefone</span>
+                  <strong class="contact-channel-value">(61) 99370-3294</strong>
+                  <span class="contact-channel-hint">Ligar agora</span>
+                </div>
+                <span class="contact-channel-cta"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></span>
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <div class="contact-side reveal reveal-delay-1">
-          <div class="contact-cards">
-            <a class="contact-card" href="https://www.instagram.com/eletrobar.br" target="_blank" rel="noreferrer">
-              <span><i class="fa-brands fa-instagram" aria-hidden="true"></i></span><div><small>Instagram</small><strong>@eletrobar.br</strong></div>
-            </a>
-            <a class="contact-card" href="https://wa.me/5561993703294" target="_blank" rel="noreferrer">
-              <span><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></span><div><small>WhatsApp</small><strong>(61) 99370-3294</strong></div>
-            </a>
-            <a class="contact-card" href="https://eletrobar.br" target="_blank" rel="noreferrer">
-              <span><i class="fa-solid fa-globe" aria-hidden="true"></i></span><div><small>Site</small><strong>eletrobar.br</strong></div>
-            </a>
-          </div>
-          <div class="contact-photo">
-            <img src="assets/testimonial-night.png" alt="Grupo comemorando com drinks da Eletrobar" />
-          </div>
+        <div class="contact-photo reveal reveal-delay-1">
+          <img src="assets/testimonial-night.png" alt="Grupo comemorando com drinks da Eletrobar" />
         </div>
       </div>
     </section>

@@ -494,6 +494,7 @@ cite { color: var(--green); font-style: normal; font-weight: 800; font-size: .9r
 .socials .fa-brands,
 .socials .fa-solid { font-size: 1.12rem; line-height: 1; }
 .copyright { margin: 30px auto 0; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.08); color: #8794a0; text-align: center; font-size: .86rem; width: min(var(--max), calc(100% - 40px)); }
+.footer-company { margin: 14px auto 0; color: #8794a0; text-align: center; font-size: .82rem; line-height: 1.5; width: min(var(--max), calc(100% - 40px)); }
 .copyright-symbol { margin-inline-end: 0.28em; opacity: .92; font-size: 0.95em; vertical-align: 0.02em; }
 .floating-whatsapp {
   position: fixed;

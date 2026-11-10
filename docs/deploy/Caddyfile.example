@@ -1,7 +1,7 @@
 # Copiar para /etc/caddy/Caddyfile (ou include) na VPS Contabo.
-# Ajuste api.eletrobar.br para o seu domínio.
+# Ajuste o hostname se o domínio mudar.
 
-api.eletrobar.br {
+api.eletrobar.com.br {
     encode gzip
 
     header {

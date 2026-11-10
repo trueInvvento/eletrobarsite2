@@ -28,6 +28,7 @@
       <a href="#servicos">Serviços</a>
       <a href="#funcionamento">Funcionamento</a>
       <a href="#depoimentos">Depoimentos</a>
+      <a href="#assistente">Assistente</a>
       <a href="#contato">Contato</a>
       <a class="btn btn-small btn-outline" href="https://wa.me/5561993703294?text=Ol%C3%A1!%20Quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20EletroBar" target="_blank" rel="noreferrer">Solicitar orçamento</a>
     </nav>
@@ -233,6 +234,34 @@
       <img class="splash splash-section" src="assets/splash-divider-3.png" alt="" aria-hidden="true" />
     </section>
 
+    <section class="assistant section-panel" id="assistente" aria-labelledby="assistant-title">
+      <div class="container assistant-layout">
+        <div class="assistant-intro reveal">
+          <p class="section-kicker">Assistente</p>
+          <h2 id="assistant-title">Planeje drinks para seu <span>evento</span></h2>
+          <p class="assistant-lead">Descreva sua festa, casamento ou evento corporativo. O assistente sugere combinações compatíveis com a máquina Eletrobar — sem compromisso.</p>
+          <p id="chat-disclaimer" class="assistant-disclaimer">As conversas podem ser armazenadas para melhorar o atendimento. Valores e disponibilidade são confirmados pela nossa equipe. <a href="#contato">Saiba mais nos canais oficiais</a>.</p>
+        </div>
+
+        <div class="chat-panel reveal reveal-delay-1">
+          <div id="chat-log" class="chat-log" role="log" aria-live="polite" aria-relevant="additions" aria-label="Mensagens do assistente">
+            <div class="chat-bubble chat-bubble--assistant" role="article">
+              <span class="chat-bubble-label">Assistente</span>
+              <p class="chat-bubble-text">Olá! Conte o tipo de evento, quantidade de convidados e se prefere drinks com ou sem álcool. Monto sugestões para você.</p>
+            </div>
+          </div>
+          <p id="chat-status" class="chat-status" aria-live="polite"></p>
+          <form id="chat-form" class="chat-form" autocomplete="off">
+            <label class="visually-hidden" for="chat-input">Sua mensagem</label>
+            <input id="chat-input" name="message" type="text" placeholder="Ex.: casamento 150 pessoas, metade sem álcool" maxlength="2000" required />
+            <button class="btn btn-primary" type="submit">Enviar <i class="fa-solid fa-paper-plane btn-icon-suffix" aria-hidden="true"></i></button>
+          </form>
+          <button id="chat-lead-btn" class="btn btn-outline chat-lead-btn" type="button">Enviar resumo para orçamento</button>
+        </div>
+      </div>
+      <img class="splash splash-section" src="assets/splash-divider-3.png" alt="" aria-hidden="true" />
+    </section>
+
     <section class="contact section-panel" id="contato" aria-labelledby="contact-title">
       <div class="container contact-layout">
         <div class="contact-intro reveal">
@@ -296,6 +325,7 @@
         <a href="#servicos">Serviços</a>
         <a href="#funcionamento">Funcionamento</a>
         <a href="#depoimentos">Depoimentos</a>
+        <a href="#assistente">Assistente</a>
         <a href="#contato">Contato</a>
       </div>
       <div>
@@ -318,6 +348,8 @@
 
   <a class="floating-whatsapp" href="https://wa.me/5561993703294?text=Ol%C3%A1!%20Quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20EletroBar" target="_blank" rel="noreferrer" aria-label="Chamar no WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
 
+  <script src="assets/config.js"></script>
   <script src="script.js"></script>
+  <script src="assets/chat.js" defer></script>
 </body>
 </html>

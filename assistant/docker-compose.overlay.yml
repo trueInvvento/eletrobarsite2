@@ -1,0 +1,34 @@
+# Overlay para /home/wesle/stack — adicionar ao docker-compose do n8n-stack.
+# Ajuste network name se o compose principal usar outro nome.
+
+services:
+  eletrobar-api:
+    build:
+      context: ./eletrobar-assistant
+      dockerfile: Dockerfile
+    container_name: eletrobar-api
+    restart: unless-stopped
+    env_file:
+      - ./eletrobar-assistant/.env
+    ports:
+      - "127.0.0.1:8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - default
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+# Deploy na VPS:
+# 1. git clone / rsync assistant/ para ~/stack/eletrobar-assistant
+# 2. cp assistant/.env.example → eletrobar-assistant/.env e preencher
+# 3. psql: rodar migrations/001_init.sql
+# 4. docker compose -f docker-compose.yml -f eletrobar-assistant/docker-compose.overlay.yml up -d --build eletrobar-api
+# 5. Caddy conforme docs/deploy/Caddyfile.example

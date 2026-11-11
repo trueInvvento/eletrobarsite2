@@ -4,10 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Eletrobar: máquina de drinks de autoatendimento para festas, casamentos, formaturas, eventos corporativos e ativações de marca." />
+  <meta name="theme-color" content="#05060d" />
+  <meta property="og:title" content="Eletrobar | A Revolução dos Drinks de Autoatendimento" />
+  <meta property="og:description" content="Drinks preparados na hora, sem filas. Alugue a máquina Eletrobar para o seu evento." />
+  <meta property="og:image" content="assets/v2/hero-bg.jpg" />
   <title>Eletrobar | A Revolução dos Drinks de Autoatendimento</title>
+  <link rel="icon" href="assets/logo-splash.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -16,7 +21,8 @@
 
   <header class="main-header" id="topo">
     <a class="brand" href="#topo" aria-label="Eletrobar - início">
-      <span class="brand-text">EletroBar</span>
+      <span class="brand-mark" aria-hidden="true">EB</span>
+      <span class="brand-text">Eletro<span>Bar</span></span>
     </a>
 
     <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
@@ -30,39 +36,69 @@
       <a href="#depoimentos">Depoimentos</a>
       <a href="#assistente">Assistente</a>
       <a href="#contato">Contato</a>
-      <a class="btn btn-small btn-outline" href="https://wa.me/5561993703294?text=Ol%C3%A1!%20Quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20EletroBar" target="_blank" rel="noreferrer">Solicitar orçamento</a>
+      <a class="btn btn-small btn-primary" href="https://wa.me/5561993703294?text=Ol%C3%A1!%20Quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20EletroBar" target="_blank" rel="noreferrer">Solicitar orçamento</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero section-panel" aria-labelledby="hero-title">
-      <div class="hero-overlay"></div>
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <img src="assets/v2/hero-bg.jpg" alt="" fetchpriority="high" />
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <img class="hero-logo" src="assets/logo-splash.png" alt="Logo Eletrobar com splash verde" />
-          <p class="eyebrow">drinks <i class="fa-solid fa-circle eyebrow-sep" aria-hidden="true"></i> tecnologia <i class="fa-solid fa-circle eyebrow-sep" aria-hidden="true"></i> autoatendimento</p>
-          <h1 id="hero-title">A Revolução dos Drinks de <span>Autoatendimento</span></h1>
-          <p class="hero-lead">Leve inovação, praticidade e diversão para o seu evento com a máquina de drinks Eletrobar.</p>
+          <p class="pill"><span class="pill-dot"></span> Drinks · Tecnologia · Autoatendimento</p>
+          <h1 id="hero-title">A revolução dos drinks de <span class="grad-text">autoatendimento</span></h1>
+          <p class="hero-lead">Leve inovação, praticidade e diversão para o seu evento com a máquina de drinks Eletrobar. Sem filas, sem espera, só festa.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contato">Alugue para seu evento <i class="fa-solid fa-chevron-right btn-icon-suffix" aria-hidden="true"></i></a>
-            <a class="btn btn-ghost" href="#funcionamento"><i class="fa-solid fa-play play-icon" aria-hidden="true"></i> Ver como funciona</a>
+            <a class="btn btn-primary btn-lg" href="#contato">Alugue para seu evento <i class="fa-solid fa-arrow-right btn-icon-suffix" aria-hidden="true"></i></a>
+            <a class="btn btn-glass btn-lg" href="#funcionamento"><i class="fa-solid fa-play play-icon" aria-hidden="true"></i> Ver como funciona</a>
           </div>
+
+          <ul class="hero-stats" aria-label="Destaques">
+            <li><strong>10</strong><span>ingredientes por máquina</span></li>
+            <li><strong>PIX</strong><span>e cartão no autoatendimento</span></li>
+            <li><strong>IA</strong><span>para criar receitas</span></li>
+          </ul>
         </div>
 
-        <div class="hero-visual reveal reveal-delay-1">
-          <div class="hero-card">
-            <img src="assets/hero-machine.png" alt="Pessoa usando a máquina Eletrobar em uma festa" />
+        <div class="hero-floats" aria-hidden="true">
+          <div class="float-chip float-chip--a reveal reveal-delay-2">
+            <span class="float-chip-icon"><i class="fa-solid fa-bolt"></i></span>
+            <div><strong>Drink em segundos</strong><small>Preparado na hora</small></div>
+          </div>
+          <div class="float-chip float-chip--b reveal reveal-delay-3">
+            <span class="float-chip-icon float-chip-icon--pink"><i class="fa-solid fa-hand-pointer"></i></span>
+            <div><strong>Tela touch</strong><small>Escolha e acompanhe</small></div>
           </div>
         </div>
       </div>
-      <img class="splash splash-hero" src="assets/splash-divider-3.png" alt="" aria-hidden="true" />
+
+      <div class="liquid liquid--hero" aria-hidden="true"><img src="assets/v2/splash-wave-1.jpg" alt="" /></div>
     </section>
 
-    <section class="about section-panel" id="sobre" aria-labelledby="about-title">
-      <div class="container panel-grid">
-        <div class="panel-copy reveal">
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Festas</span><i class="fa-solid fa-bolt"></i><span>Casamentos</span><i class="fa-solid fa-bolt"></i><span>Formaturas</span><i class="fa-solid fa-bolt"></i><span>Eventos corporativos</span><i class="fa-solid fa-bolt"></i><span>Ativações de marca</span><i class="fa-solid fa-bolt"></i><span>Bares</span><i class="fa-solid fa-bolt"></i>
+        <span>Festas</span><i class="fa-solid fa-bolt"></i><span>Casamentos</span><i class="fa-solid fa-bolt"></i><span>Formaturas</span><i class="fa-solid fa-bolt"></i><span>Eventos corporativos</span><i class="fa-solid fa-bolt"></i><span>Ativações de marca</span><i class="fa-solid fa-bolt"></i><span>Bares</span><i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <!-- SOBRE -->
+    <section class="section about" id="sobre" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <img src="assets/v2/machine-hero.jpg" alt="Máquina Eletrobar com tela touch e copo sendo preenchido" loading="lazy" />
+          <div class="about-media-chip"><i class="fa-solid fa-circle-check"></i> Prepara, serve e cobra</div>
+        </div>
+
+        <div class="about-copy reveal reveal-delay-1">
           <p class="section-kicker">Sobre</p>
-          <h2 id="about-title">Sobre a <span>Eletrobar</span></h2>
+          <h2 id="about-title">Sobre a <span class="grad-text">Eletrobar</span></h2>
           <p>A Eletrobar é uma máquina de drinks de autoatendimento que transforma qualquer evento em uma experiência inesquecível. Rápida, intuitiva e moderna, ela oferece praticidade para os convidados e muito mais diversão para todos.</p>
           <p>Ideal para festas, casamentos, formaturas, bares, ativações promocionais e eventos corporativos.</p>
 
@@ -73,177 +109,171 @@
               <p>Bebidas preparadas na hora, com menos filas e mais fluidez no evento.</p>
             </article>
             <article class="feature-card" role="listitem">
-              <span class="feature-icon"><i class="fa-solid fa-hand-pointer" aria-hidden="true"></i></span>
+              <span class="feature-icon feature-icon--pink"><i class="fa-solid fa-hand-pointer" aria-hidden="true"></i></span>
               <h3>Autoatendimento intuitivo</h3>
               <p>Tela touch simples para o convidado escolher e acompanhar o preparo.</p>
             </article>
             <article class="feature-card" role="listitem">
-              <span class="feature-icon"><i class="fa-solid fa-credit-card" aria-hidden="true"></i></span>
+              <span class="feature-icon feature-icon--cyan"><i class="fa-solid fa-credit-card" aria-hidden="true"></i></span>
               <h3>Pagamentos eletrônicos</h3>
               <p>Mais segurança, controle e agilidade para cobrança por drink.</p>
             </article>
           </div>
         </div>
-
-        <div class="media-frame reveal reveal-delay-1">
-          <img src="assets/hero-machine.png" alt="Convidado retirando drink preparado pela Eletrobar" />
-        </div>
       </div>
-      <img class="splash splash-section" src="assets/splash-divider-3.png" alt="" aria-hidden="true" />
     </section>
 
-    <section class="services section-panel" id="servicos" aria-labelledby="services-title">
+    <div class="liquid liquid--pink" aria-hidden="true"><img src="assets/v2/splash-wave-2.jpg" alt="" /></div>
+
+    <!-- SERVIÇOS -->
+    <section class="section services" id="servicos" aria-labelledby="services-title">
       <div class="container">
         <div class="section-heading reveal">
           <p class="section-kicker">Serviços / Produtos</p>
-          <h2 id="services-title">Serviços e <span>Produtos</span></h2>
+          <h2 id="services-title">Serviços e <span class="grad-text">Produtos</span></h2>
           <p>Escolha a Eletrobar para transformar o bar do seu evento em uma atração tecnológica, visual e altamente compartilhável.</p>
         </div>
 
-        <div class="services-layout">
-          <aside class="product-showcase reveal">
-            <img src="assets/topo.png" alt="Máquina Eletrobar em evento com pessoas celebrando" />
-            <div class="product-badge">O futuro dos drinks chegou</div>
-          </aside>
+        <div class="service-cards">
+          <article class="service-card reveal">
+            <img src="assets/v2/service-party.jpg" alt="Formanda sorrindo ao servir drink na máquina Eletrobar em uma festa" loading="lazy" />
+            <div class="service-content">
+              <span class="service-icon"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></span>
+              <h3>Aluguel para Eventos</h3>
+              <p>Máquina de drinks completa para festas, ativações de marca e eventos com alto fluxo de convidados.</p>
+              <a class="service-link" href="#contato">Quero alugar <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
 
-          <div class="service-cards">
-            <article class="service-card reveal reveal-delay-1">
-              <img src="assets/party-horizontal.png" alt="Pessoas em evento usando a máquina de drinks" />
-              <div class="service-content">
-                <span class="service-icon"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></span>
-                <h3>Aluguel para Eventos</h3>
-                <p>Máquina de drinks completa para festas, ativações de marca e eventos com alto fluxo de convidados.</p>
-              </div>
-            </article>
+          <article class="service-card reveal reveal-delay-1">
+            <img src="assets/v2/service-wedding.jpg" alt="Noivos e convidados brindando ao lado da máquina Eletrobar" loading="lazy" />
+            <div class="service-content">
+              <span class="service-icon service-icon--pink"><i class="fa-solid fa-users" aria-hidden="true"></i></span>
+              <h3>Eventos Particulares</h3>
+              <p>Praticidade e experiência diferenciada para aniversários, casamentos, formaturas e celebrações.</p>
+              <a class="service-link" href="#contato">Quero para minha festa <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
 
-            <article class="service-card reveal reveal-delay-2">
-              <img src="assets/hero-machine.png" alt="Convidado sorrindo ao retirar um drink" />
-              <div class="service-content">
-                <span class="service-icon"><i class="fa-solid fa-users" aria-hidden="true"></i></span>
-                <h3>Eventos Particulares</h3>
-                <p>Praticidade e experiência diferenciada para aniversários, casamentos, formaturas e celebrações.</p>
-              </div>
-            </article>
-
-            <article class="service-card reveal reveal-delay-3">
-              <img src="assets/testimonial-night.png" alt="Grupo em evento com drinks e máquina Eletrobar" />
-              <div class="service-content">
-                <span class="service-icon"><i class="fa-solid fa-building" aria-hidden="true"></i></span>
-                <h3>Eventos Corporativos</h3>
-                <p>Inovação para feiras, confraternizações, lançamentos, ações promocionais e experiências de marca.</p>
-              </div>
-            </article>
-          </div>
+          <article class="service-card reveal reveal-delay-2">
+            <img src="assets/v2/service-corporate.jpg" alt="Profissionais com drinks em evento corporativo com máquinas Eletrobar" loading="lazy" />
+            <div class="service-content">
+              <span class="service-icon service-icon--cyan"><i class="fa-solid fa-building" aria-hidden="true"></i></span>
+              <h3>Eventos Corporativos</h3>
+              <p>Inovação para feiras, confraternizações, lançamentos, ações promocionais e experiências de marca.</p>
+              <a class="service-link" href="#contato">Quero para minha empresa <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
         </div>
       </div>
-      <img class="splash splash-section" src="assets/splash-divider-3.png" alt="" aria-hidden="true" />
     </section>
 
-    <section class="how-it-works section-panel" id="funcionamento" aria-labelledby="how-title">
+    <!-- FUNCIONAMENTO -->
+    <section class="section how-it-works" id="funcionamento" aria-labelledby="how-title">
       <div class="container">
         <div class="section-heading reveal">
           <p class="section-kicker">Funcionamento</p>
-          <h2 id="how-title">Da configuração ao <span>drink no copo</span></h2>
+          <h2 id="how-title">Da configuração ao <span class="grad-text">drink no copo</span></h2>
           <p>Entenda como a máquina combina ingredientes, personaliza porções e se adapta à cobrança do seu evento.</p>
         </div>
 
-        <div class="hiw-layout">
-          <aside class="hiw-showcase reveal">
-            <img src="assets/about-event.png" alt="Eletrobar em evento com convidados" />
-            <div class="hiw-showcase-badge">Até 10 ingredientes em cada preparo</div>
-          </aside>
-
-          <div class="hiw-cards">
-            <article class="hiw-card reveal reveal-delay-1">
-              <span class="hiw-card-icon" aria-hidden="true"><i class="fa-solid fa-flask"></i></span>
-              <h3>Preparação dos drinks</h3>
-              <p>A Eletrobar suporta até <strong>10 ingredientes</strong> diferentes. As bebidas são feitas pela <strong>mistura automatizada</strong> desses insumos, com <strong>receitas</strong> que você configura manualmente ou com o <strong>auxílio de inteligência artificial embarcada</strong>.</p>
-            </article>
-
-            <article class="hiw-card reveal reveal-delay-2">
-              <span class="hiw-card-icon" aria-hidden="true"><i class="fa-solid fa-martini-glass-citrus"></i></span>
-              <h3>Copo e volume</h3>
-              <p>Você define o <strong>tamanho do copo</strong> e o <strong>volume máximo</strong> de cada drink para manter o padrão do cardápio e do serviço.</p>
-            </article>
-
-            <article class="hiw-card reveal reveal-delay-3">
-              <span class="hiw-card-icon" aria-hidden="true"><i class="fa-solid fa-sack-dollar"></i></span>
-              <h3>Cobrança flexível</h3>
-              <p>Funciona em modo <strong>gratuito</strong> (cortesia) ou com <strong>pagamento</strong> por <strong>cartão</strong> (crédito ou débito) e <strong>PIX</strong>.</p>
-            </article>
-
-            <article class="hiw-card reveal reveal-delay-4">
-              <span class="hiw-card-icon" aria-hidden="true"><i class="fa-solid fa-bell"></i></span>
-              <h3>Reposição sem surpresas</h3>
-              <p>O sistema <strong>avisa quando um ingrediente precisa ser substituído</strong>, facilitando a manutenção durante o evento.</p>
-            </article>
-          </div>
+        <div class="hiw-banner reveal">
+          <img src="assets/v2/process-pour.jpg" alt="Três ingredientes sendo misturados automaticamente em um copo com gelo" loading="lazy" />
+          <div class="hiw-banner-badge"><i class="fa-solid fa-flask"></i> Até 10 ingredientes em cada preparo</div>
         </div>
 
-        <div class="hiw-subgrid reveal">
-          <figure class="hiw-subcard">
-            <img src="assets/services-corporate.png" alt="Referência de layout interno da máquina Eletrobar" />
-      
-            <figcaption>Organização dos ingredientes e fluxo interno</figcaption>
-          </figure>
-          <figure class="hiw-subcard">
-            <img src="assets/mockup-reference-generated.png" alt="Interface de configuração e experiência touch da Eletrobar" />
-            <figcaption>Interface touch e configuração de receitas</figcaption>
-          </figure>
-        </div>
+        <ol class="hiw-cards">
+          <li class="hiw-card reveal">
+            <span class="hiw-step" aria-hidden="true">01</span>
+            <span class="hiw-card-icon" aria-hidden="true"><i class="fa-solid fa-flask"></i></span>
+            <h3>Preparação dos drinks</h3>
+            <p>A Eletrobar suporta até <strong>10 ingredientes</strong> diferentes. As bebidas são feitas pela <strong>mistura automatizada</strong> desses insumos, com <strong>receitas</strong> que você configura manualmente ou com o <strong>auxílio de inteligência artificial embarcada</strong>.</p>
+          </li>
+
+          <li class="hiw-card reveal reveal-delay-1">
+            <span class="hiw-step" aria-hidden="true">02</span>
+            <span class="hiw-card-icon hiw-card-icon--pink" aria-hidden="true"><i class="fa-solid fa-martini-glass-citrus"></i></span>
+            <h3>Copo e volume</h3>
+            <p>Você define o <strong>tamanho do copo</strong> e o <strong>volume máximo</strong> de cada drink para manter o padrão do cardápio e do serviço.</p>
+          </li>
+
+          <li class="hiw-card reveal reveal-delay-2">
+            <span class="hiw-step" aria-hidden="true">03</span>
+            <span class="hiw-card-icon hiw-card-icon--cyan" aria-hidden="true"><i class="fa-solid fa-sack-dollar"></i></span>
+            <h3>Cobrança flexível</h3>
+            <p>Funciona em modo <strong>gratuito</strong> (cortesia) ou com <strong>pagamento</strong> por <strong>cartão</strong> (crédito ou débito) e <strong>PIX</strong>.</p>
+          </li>
+
+          <li class="hiw-card reveal reveal-delay-3">
+            <span class="hiw-step" aria-hidden="true">04</span>
+            <span class="hiw-card-icon hiw-card-icon--orange" aria-hidden="true"><i class="fa-solid fa-bell"></i></span>
+            <h3>Reposição sem surpresas</h3>
+            <p>O sistema <strong>avisa quando um ingrediente precisa ser substituído</strong>, facilitando a manutenção durante o evento.</p>
+          </li>
+        </ol>
       </div>
-      <img class="splash splash-section" src="assets/splash-divider-3.png" alt="" aria-hidden="true" />
     </section>
 
-    <section class="testimonials section-panel" id="depoimentos" aria-labelledby="testimonials-title">
+    <div class="liquid liquid--flip" aria-hidden="true"><img src="assets/v2/splash-wave-1.jpg" alt="" /></div>
+
+    <!-- DEPOIMENTOS -->
+    <section class="section testimonials" id="depoimentos" aria-labelledby="testimonials-title">
       <div class="container">
         <div class="section-heading compact reveal">
           <p class="section-kicker">Depoimentos</p>
-          <h2 id="testimonials-title">Quem já viveu a <span>experiência</span></h2>
+          <h2 id="testimonials-title">Quem já viveu a <span class="grad-text">experiência</span></h2>
         </div>
 
         <div class="testimonial-grid">
-          <article class="testimonial-card reveal">
-            <div class="avatar avatar-1"></div>
-            <div>
-              <p class="stars" aria-label="5 estrelas"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></p>
-              <blockquote>“A atração da festa! Todo mundo adorou a experiência.”</blockquote>
-              <cite>Mariana, aniversário</cite>
-            </div>
-          </article>
+          <figure class="testimonial-card reveal">
+            <i class="fa-solid fa-quote-right quote-mark" aria-hidden="true"></i>
+            <p class="stars" aria-label="5 estrelas"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></p>
+            <blockquote>“A atração da festa! Todo mundo adorou a experiência.”</blockquote>
+            <figcaption>
+              <img class="avatar" src="assets/v2/avatar-mariana.jpg" alt="" loading="lazy" />
+              <span><cite>Mariana</cite><small>aniversário</small></span>
+            </figcaption>
+          </figure>
 
-          <article class="testimonial-card reveal reveal-delay-1">
-            <div class="avatar avatar-2"></div>
-            <div>
-              <p class="stars" aria-label="5 estrelas"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></p>
-              <blockquote>“Prático, bonito e muito fácil de usar.”</blockquote>
-              <cite>Rafael, evento corporativo</cite>
-            </div>
-          </article>
+          <figure class="testimonial-card reveal reveal-delay-1">
+            <i class="fa-solid fa-quote-right quote-mark" aria-hidden="true"></i>
+            <p class="stars" aria-label="5 estrelas"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></p>
+            <blockquote>“Prático, bonito e muito fácil de usar.”</blockquote>
+            <figcaption>
+              <img class="avatar" src="assets/v2/avatar-rafael.jpg" alt="" loading="lazy" />
+              <span><cite>Rafael</cite><small>evento corporativo</small></span>
+            </figcaption>
+          </figure>
 
-          <article class="testimonial-card reveal reveal-delay-2">
-            <div class="avatar avatar-3"></div>
-            <div>
-              <p class="stars" aria-label="5 estrelas"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></p>
-              <blockquote>“Os drinks saem rápido e a máquina chama atenção.”</blockquote>
-              <cite>Camila, casamento</cite>
-            </div>
-          </article>
+          <figure class="testimonial-card reveal reveal-delay-2">
+            <i class="fa-solid fa-quote-right quote-mark" aria-hidden="true"></i>
+            <p class="stars" aria-label="5 estrelas"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></p>
+            <blockquote>“Os drinks saem rápido e a máquina chama atenção.”</blockquote>
+            <figcaption>
+              <img class="avatar" src="assets/v2/avatar-camila.jpg" alt="" loading="lazy" />
+              <span><cite>Camila</cite><small>casamento</small></span>
+            </figcaption>
+          </figure>
         </div>
       </div>
-      <img class="splash splash-section" src="assets/splash-divider-3.png" alt="" aria-hidden="true" />
     </section>
 
-    <section class="assistant section-panel" id="assistente" aria-labelledby="assistant-title">
+    <!-- ASSISTENTE -->
+    <section class="section assistant" id="assistente" aria-labelledby="assistant-title">
       <div class="container assistant-layout">
         <div class="assistant-intro reveal">
           <p class="section-kicker">Assistente</p>
-          <h2 id="assistant-title">Planeje drinks para seu <span>evento</span></h2>
+          <h2 id="assistant-title">Planeje drinks para seu <span class="grad-text">evento</span></h2>
           <p class="assistant-lead">Descreva sua festa, casamento ou evento corporativo. O assistente sugere combinações compatíveis com a máquina Eletrobar — sem compromisso.</p>
           <p id="chat-disclaimer" class="assistant-disclaimer">As conversas podem ser armazenadas para melhorar o atendimento. Valores e disponibilidade são confirmados pela nossa equipe. <a href="#contato">Saiba mais nos canais oficiais</a>.</p>
         </div>
 
         <div class="chat-panel reveal reveal-delay-1">
+          <div class="chat-head">
+            <span class="chat-head-dot"></span>
+            <strong>Assistente Eletrobar</strong>
+            <small>online</small>
+          </div>
           <div id="chat-log" class="chat-log" role="log" aria-live="polite" aria-relevant="additions" aria-label="Mensagens do assistente">
             <div class="chat-bubble chat-bubble--assistant" role="article">
               <span class="chat-bubble-label">Assistente</span>
@@ -256,58 +286,61 @@
             <input id="chat-input" name="message" type="text" placeholder="Ex.: casamento 150 pessoas, metade sem álcool" maxlength="2000" required />
             <button class="btn btn-primary" type="submit">Enviar <i class="fa-solid fa-paper-plane btn-icon-suffix" aria-hidden="true"></i></button>
           </form>
-          <button id="chat-lead-btn" class="btn btn-outline chat-lead-btn" type="button">Enviar resumo para orçamento</button>
+          <button id="chat-lead-btn" class="btn btn-glass chat-lead-btn" type="button">Enviar resumo para orçamento</button>
         </div>
       </div>
-      <img class="splash splash-section" src="assets/splash-divider-3.png" alt="" aria-hidden="true" />
     </section>
 
-    <section class="contact section-panel" id="contato" aria-labelledby="contact-title">
-      <div class="container contact-layout">
-        <div class="contact-intro reveal">
-          <p class="section-kicker">Contato</p>
-          <h2 id="contact-title">Fale com a <span>Eletrobar</span></h2>
-          <p class="contact-lead">Fale direto pelos nossos canais — resposta rápida para orçamentos e dúvidas.</p>
+    <div class="liquid liquid--pink liquid--flip" aria-hidden="true"><img src="assets/v2/splash-wave-2.jpg" alt="" /></div>
 
-          <ul class="contact-channels">
-            <li>
-              <a class="contact-channel contact-channel--whatsapp" href="https://wa.me/5561993703294?text=Ol%C3%A1!%20Quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20EletroBar" target="_blank" rel="noreferrer">
-                <span class="contact-channel-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
-                <div class="contact-channel-body">
-                  <span class="contact-channel-label">WhatsApp</span>
-                  <strong class="contact-channel-value">(61) 99370-3294</strong>
-                  <span class="contact-channel-hint">Orçamento e atendimento</span>
-                </div>
-                <span class="contact-channel-cta"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></span>
-              </a>
-            </li>
-            <li>
-              <a class="contact-channel contact-channel--instagram" href="https://www.instagram.com/eletrobar.br" target="_blank" rel="noreferrer">
-                <span class="contact-channel-icon" aria-hidden="true"><i class="fa-brands fa-instagram"></i></span>
-                <div class="contact-channel-body">
-                  <span class="contact-channel-label">Instagram</span>
-                  <strong class="contact-channel-value">@eletrobar.br</strong>
-                  <span class="contact-channel-hint">Fotos, novidades e DM</span>
-                </div>
-                <span class="contact-channel-cta"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></span>
-              </a>
-            </li>
-            <li>
-              <a class="contact-channel contact-channel--phone" href="tel:+5561993703294">
-                <span class="contact-channel-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></span>
-                <div class="contact-channel-body">
-                  <span class="contact-channel-label">Telefone</span>
-                  <strong class="contact-channel-value">(61) 99370-3294</strong>
-                  <span class="contact-channel-hint">Ligar agora</span>
-                </div>
-                <span class="contact-channel-cta"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></span>
-              </a>
-            </li>
-          </ul>
-        </div>
+    <!-- CONTATO -->
+    <section class="section contact" id="contato" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card reveal">
+          <img class="contact-card-bg" src="assets/v2/contact-bg.jpg" alt="" loading="lazy" />
+          <div class="contact-card-shade" aria-hidden="true"></div>
 
-        <div class="contact-photo reveal reveal-delay-1">
-          <img src="assets/testimonial-night.png" alt="Grupo comemorando com drinks da Eletrobar" />
+          <div class="contact-intro">
+            <p class="section-kicker">Contato</p>
+            <h2 id="contact-title">Fale com a <span class="grad-text">Eletrobar</span></h2>
+            <p class="contact-lead">Fale direto pelos nossos canais — resposta rápida para orçamentos e dúvidas.</p>
+
+            <ul class="contact-channels">
+              <li>
+                <a class="contact-channel contact-channel--whatsapp" href="https://wa.me/5561993703294?text=Ol%C3%A1!%20Quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20EletroBar" target="_blank" rel="noreferrer">
+                  <span class="contact-channel-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+                  <div class="contact-channel-body">
+                    <span class="contact-channel-label">WhatsApp</span>
+                    <strong class="contact-channel-value">(61) 99370-3294</strong>
+                    <span class="contact-channel-hint">Orçamento e atendimento</span>
+                  </div>
+                  <span class="contact-channel-cta"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </a>
+              </li>
+              <li>
+                <a class="contact-channel contact-channel--instagram" href="https://www.instagram.com/eletrobar.br" target="_blank" rel="noreferrer">
+                  <span class="contact-channel-icon" aria-hidden="true"><i class="fa-brands fa-instagram"></i></span>
+                  <div class="contact-channel-body">
+                    <span class="contact-channel-label">Instagram</span>
+                    <strong class="contact-channel-value">@eletrobar.br</strong>
+                    <span class="contact-channel-hint">Fotos, novidades e DM</span>
+                  </div>
+                  <span class="contact-channel-cta"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </a>
+              </li>
+              <li>
+                <a class="contact-channel contact-channel--phone" href="tel:+5561993703294">
+                  <span class="contact-channel-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></span>
+                  <div class="contact-channel-body">
+                    <span class="contact-channel-label">Telefone</span>
+                    <strong class="contact-channel-value">(61) 99370-3294</strong>
+                    <span class="contact-channel-hint">Ligar agora</span>
+                  </div>
+                  <span class="contact-channel-cta"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>

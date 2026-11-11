@@ -22,13 +22,30 @@ nav?.querySelectorAll('a').forEach((link) => {
   });
 });
 
-const observer = new IntersectionObserver((entries) => {
+// Reveal on scroll
+const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('is-visible');
-      observer.unobserve(entry.target);
+      revealObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.15 });
+}, { threshold: 0.12 });
 
-document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+
+// Scrollspy: destaca o link da seção visível
+const navLinks = [...(nav?.querySelectorAll('a[href^="#"]') ?? [])];
+const spyTargets = navLinks
+  .map((a) => document.querySelector(a.getAttribute('href')))
+  .filter(Boolean);
+
+if (spyTargets.length) {
+  const spy = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      navLinks.forEach((a) => a.classList.toggle('is-active', a.getAttribute('href') === `#${entry.target.id}`));
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  spyTargets.forEach((section) => spy.observe(section));
+}

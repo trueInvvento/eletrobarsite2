@@ -218,7 +218,6 @@ h2 {
   align-items: center;
   padding: 130px 0 clamp(150px, 15vw, 230px);
   overflow: hidden;
-  isolation: isolate;
 }
 .hero-grid { z-index: 2; }
 .hero-media { position: absolute; inset: 0; z-index: -2; }
@@ -600,6 +599,8 @@ h2 {
 /* ---------- Reveal ---------- */
 .reveal { opacity: 0; transform: translateY(30px); transition: opacity .8s cubic-bezier(.2, .7, .2, 1), transform .8s cubic-bezier(.2, .7, .2, 1); }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
+/* Hero acima da dobra: sempre visível (evita tela “vazia” se JS/CDN atrasar) */
+.hero .reveal { opacity: 1; transform: none; }
 .reveal-delay-1 { transition-delay: .1s; }
 .reveal-delay-2 { transition-delay: .2s; }
 .reveal-delay-3 { transition-delay: .3s; }

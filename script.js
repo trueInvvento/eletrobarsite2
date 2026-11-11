@@ -33,6 +33,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+document.querySelectorAll('.hero .reveal').forEach((el) => el.classList.add('is-visible'));
 
 // Scrollspy: destaca o link da seção visível
 const navLinks = [...(nav?.querySelectorAll('a[href^="#"]') ?? [])];
